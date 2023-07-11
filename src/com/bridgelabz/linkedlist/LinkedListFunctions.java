@@ -100,4 +100,17 @@ public class LinkedListFunctions {
         }
         secondLastNode.next = lastNode.next;
     }
+    public void peek() {
+        Node currentNode = head;
+        if (head == null) {
+            System.out.println("Linked List is Empty");
+        }
+        while (currentNode != null) {
+            System.out.print(currentNode.data);
+            currentNode = currentNode.next;
+            currentNode = null;
+        }
+        System.out.println();
+    }
+
 }
