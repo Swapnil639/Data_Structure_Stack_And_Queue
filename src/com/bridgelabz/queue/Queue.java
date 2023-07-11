@@ -7,6 +7,9 @@ public class Queue {
     public void enque(int data) {
         linkedList.addElementAtLast(data);
     }
+    public void deque() {
+        linkedList.firstElementDelete();
+    }
     public void toPrint() {
         linkedList.printList();
     }
